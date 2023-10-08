@@ -51,7 +51,6 @@ namespace KurAPI.Controllers
             catch (Exception ex)
             {
                 result.Error = ex.Message;
-                //throw;
             }
 
 
