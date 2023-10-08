@@ -16,6 +16,7 @@ namespace KurAPI.Controllers
         public ResponseData Run(RequestData data)
         {
             ResponseData result = new ResponseData();
+
             try
             {
                 string apiAdress = string.Format("http://www.tcmb.gov.tr/kurlar/{0}.xml", (data.isToday) ? "today" :
@@ -46,7 +47,6 @@ namespace KurAPI.Controllers
 
                     result.Data.Add(currecy);
                 }
-
             }
             catch (Exception ex)
             {
